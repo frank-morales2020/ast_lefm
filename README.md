@@ -139,11 +139,6 @@ The New Zeta is ready. The code is the proof.
 The code is open. The proof runs. The truth is reproducible.
 
 
-
-
-
-
-
 Reproducibility
 Deterministic seed: 123
 
