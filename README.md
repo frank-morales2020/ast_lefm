@@ -42,7 +42,7 @@ Open source: MIT License
 Full validation: UNESCO Resilient AI Challenge (zero violations)
 
 Citation
-Morales Aguilera, F. (2026). AST/L-EFM: A Unified Spectral Framework for Prime Number Theory, the Riemann Hypothesis, and Deterministic AI Safety. Zenodo.
+[Morales Aguilera, F. (2026). AST/L-EFM: A Unified Spectral Framework for Prime Number Theory, the Riemann Hypothesis, and Deterministic AI Safety. Zenodo.](https://zenodo.org/records/20253121)
 
 Links
 
