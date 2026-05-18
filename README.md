@@ -32,3 +32,22 @@ trap = spectral_trap()  # only sigma=0.5 returns 1.0
 # AI safety decision
 sroi = h2e_sroi(embedding_vector)
 decision, is_safe = h2e_decision(sroi, threshold=LAMBDA)
+```
+
+Reproducibility
+Deterministic seed: 123
+
+Open source: MIT License
+
+Full validation: UNESCO Resilient AI Challenge (zero violations)
+
+Citation
+Morales Aguilera, F. (2026). AST/L-EFM: A Unified Spectral Framework for Prime Number Theory, the Riemann Hypothesis, and Deterministic AI Safety. Zenodo.
+
+Links
+
+[GitHub Repository](https://github.com/frank-morales2020/ast_lefm)
+
+[Zenodo Archive](https://zenodo.org/records/20199735)
+
+[UNESCO Validation](https://github.com/frank-morales2020/MLxDL)
