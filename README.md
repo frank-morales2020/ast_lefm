@@ -53,6 +53,33 @@ print(f"   Threshold Λ = {LAMBDA:.6f}")
 print(f"   Decision: {decision}")
 print(f"   Safe: {is_safe}")
 ```
+Output
+
+```text
+1. Universal coherence at σ=0.5: 0.5
+2. Green-Tao coherence at σ=0.45:
+   k=3: 0.305560
+   k=4: 0.261651
+   k=5: 0.277546
+   k=6: 0.533107
+3. Spectral trap (|E_σ| at γ=0):
+   σ=0.1: 2.519648e+144 → ✗ REJECTED
+   σ=0.2: 3.071315e+56 → ✗ REJECTED
+   σ=0.3: 7.124944e+22 → ✗ REJECTED
+   σ=0.4: 3.409971e+07 → ✗ REJECTED
+   σ=0.5: 1.000000e+00 → ✓ ADMISSIBLE
+   σ=0.6: 1.293790e-04 → ✗ REJECTED
+   σ=0.7: 1.050747e-06 → ✗ REJECTED
+   σ=0.8: 7.096755e-08 → ✗ REJECTED
+   σ=0.9: 1.467476e-08 → ✗ REJECTED
+
+4. H2E Sheriff Decision:
+   SROI = 0.997579
+   Threshold Λ = 0.978514
+   Decision: ACCEPT
+   Safe: True
+```
+
 
 Reproducibility
 Deterministic seed: 123
