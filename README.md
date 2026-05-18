@@ -1,5 +1,7 @@
 # AST/L-EFM: Arithmetic Spectral Theory and the Laplace-Euler-Fourier-Mellin Operator
 
+[AST/L-EFM: A Complete Python Library for Spectral Quantification of Prime Theorems, Proof of the Riemann Hypothesis, and Deterministic AI Safety](https://zenodo.org/records/20275803)
+
 **A unified spectral framework for prime number theory, the Riemann Hypothesis, and deterministic AI safety.**
 
 ## Ground Truth
