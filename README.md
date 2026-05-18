@@ -100,16 +100,16 @@ The code runs. The numbers are deterministic. The results are reproducible.
 ### The Spectral Trap Magnitudes
 
 | σ | |E_σ| (normalized) | Status |
-|---|-----------------|--------|
-| 0.1 | 2.52 × 10¹⁴⁴ | ✗ REJECTED |
-| 0.2 | 3.07 × 10⁵⁶ | ✗ REJECTED |
-| 0.3 | 7.12 × 10²² | ✗ REJECTED |
-| 0.4 | 3.41 × 10⁷ | ✗ REJECTED |
-| **0.5** | **1.00** | **✓ ADMISSIBLE** |
-| 0.6 | 1.29 × 10⁻⁴ | ✗ REJECTED |
-| 0.7 | 1.05 × 10⁻⁶ | ✗ REJECTED |
-| 0.8 | 7.10 × 10⁻⁸ | ✗ REJECTED |
-| 0.9 | 1.47 × 10⁻⁸ | ✗ REJECTED |
+|---|--------------------|--------|
+| 0.1 | 2.52 × 10¹⁴⁴     | ✗ REJECTED |
+| 0.2 | 3.07 × 10⁵⁶      | ✗ REJECTED |
+| 0.3 | 7.12 × 10²²      | ✗ REJECTED |
+| 0.4 | 3.41 × 10⁷       | ✗ REJECTED |
+| **0.5** | **1.00**     | **✓ ADMISSIBLE** |
+| 0.6 | 1.29 × 10⁻⁴      | ✗ REJECTED |
+| 0.7 | 1.05 × 10⁻⁶      | ✗ REJECTED |
+| 0.8 | 7.10 × 10⁻⁸      | ✗ REJECTED |
+| 0.9 | 1.47 × 10⁻⁸      | ✗ REJECTED |
 
 **The trap is symmetric and exponential.** Only σ=0.5 is admissible.
 
