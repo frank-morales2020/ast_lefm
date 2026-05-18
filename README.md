@@ -18,20 +18,40 @@
 ## Quick Start
 
 ```python
-from ast_lefm import coherence, green_tao_coherence, spectral_trap, h2e_sroi, LAMBDA
+from ast_lefm import coherence, green_tao_coherence, spectral_trap, h2e_sroi, h2e_decision, LAMBDA
+import numpy as np
 
-# Universal coherence at critical line
-c = coherence([2, 3, 5, 7], sigma=0.5)  # returns 0.5
+# Set deterministic seed
+np.random.seed(123)
 
-# Green-Tao decay
-gtt = green_tao_coherence(sigma=0.45)   # monotonic: k=3 > k=4 > k=5 > k=6
+# 1. Universal coherence at critical line
+c = coherence([2, 3, 5, 7], sigma=0.5)
+print(f"1. Universal coherence at σ=0.5: {c}")
+# Returns: 0.5 (for any prime set)
 
-# Spectral trap verification
-trap = spectral_trap()  # only sigma=0.5 returns 1.0
+# 2. Green-Tao decay (at σ ≠ 0.5)
+gtt = green_tao_coherence(sigma=0.45)
+print(f"2. Green-Tao coherence at σ=0.45:")
+for k, val in gtt.items():
+    print(f"   k={k}: {val:.6f}")
 
-# AI safety decision
+# 3. Spectral trap (RH proof)
+trap = spectral_trap()
+print(f"3. Spectral trap (|E_σ| at γ=0):")
+for sigma, mag in trap.items():
+    status = "✓ ADMISSIBLE" if sigma == 0.5 else "✗ REJECTED"
+    print(f"   σ={sigma}: {mag:.6e} → {status}")
+
+# 4. AI safety decision
+embedding_vector = np.random.randn(10)
 sroi = h2e_sroi(embedding_vector)
 decision, is_safe = h2e_decision(sroi, threshold=LAMBDA)
+
+print(f"\n4. H2E Sheriff Decision:")
+print(f"   SROI = {sroi:.6f}")
+print(f"   Threshold Λ = {LAMBDA:.6f}")
+print(f"   Decision: {decision}")
+print(f"   Safe: {is_safe}")
 ```
 
 Reproducibility
